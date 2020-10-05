@@ -5,21 +5,21 @@
 
 ##It will give you basic inforamtion regarding the project.
 
-Step 1:To create a paricular layout:<br>
+Step 1:To create a paricular layout<br>
          <ul>
         <li> Create a JFrame folder in which create several <strong><em>Jframe files</strong></em> according to your need.<br></li>
         <li>Select any file and then click on design to make layout<br></li>
         <li>From the <strong><em>pallete window</strong></em> insert the field required in your layout.<br></li>
          </ul>
      
-Step 2:For Registration:<br>
+Step 2:For Registration<br>
         <ul>
         <li>Password validation has been done.<br></li>
         <li>Values entered are stored in register table in mysql.<br></li>
         <li>If user has already been registered then can login from the button show below for login and then login file is opened<br></li>
         </ul>
          
-Step 3:Login:<br>
+Step 3:Login<br>
          <ul>
         <li>Username and password entered is compared with the data in register table in mysql.<br></li>
         <li>It is matches then the menu file is appears,if it deoesn't match then user are redirected to register page.<br></li>
@@ -29,7 +29,7 @@ Step 3:Login:<br>
         <li>After changing password user can relogin with new password.<br></li>
          </ul>
 
-Step 4:Menu:<br>
+Step 4:Menu<br>
         <ul>
         <li>The menu card is created using <strong><em>scroll panel</strong></em> available in pallete.<br></li>
         <li>With the help of <strong><em>setText()</strong></em> the name,mobile no field directly contains name and mobile no in menu.<br></li>
@@ -39,12 +39,12 @@ Step 4:Menu:<br>
         <li>While exiting the program ,data like name,mobile no. and total will be saved in the table.<br></li>
         </ul>
         
-Step 5:Payment:<br>
+Step 5:Payment<br>
          <ul>
         <li>If the data entered for payment is correct then user are directed to exit page if not then payment is refreshed.<br></li>
          </ul>
          
-Step 6:Link files(register,login,forgot,new_password,menu) with database:<br>
+Step 6:Link files(register,login,forgot,new_password,menu) with database<br>
         <ul>
         <li>The data entered(username,mobile no,password ,confirm password etc.) is linked with the mysql database.<br></li>
         <li><strong><em>Password of mysql should in entered in "enter your db password"</strong></em><br></li>
