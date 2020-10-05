@@ -135,7 +135,7 @@ String name,password,m_number;
     try {
         Class.forName("java.sql.DriverManager");
         @SuppressWarnings("LocalVariableHidesMemberVariable")
-        Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant","root","2511");
+        Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant","root","enter your db password");
         
         @SuppressWarnings("LocalVariableHidesMemberVariable")
          PreparedStatement ps;
