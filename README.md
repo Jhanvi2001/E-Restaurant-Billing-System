@@ -1,9 +1,9 @@
 # E-Restaurant-Billing-System
 
-##It is mainly a Java Swing app based on paperless billing system combined with apps like Zomato,Swiggy for a restaurant.
+## It is mainly a Java Swing app based on paperless billing system combined with apps like Zomato,Swiggy for a restaurant.
 ------------------------------------------------------------------------------------------------------------------------
 
-##It will give you basic inforamtion regarding the project.
+## It will give you basic inforamtion regarding the project.
 
 Step 1:To create a paricular layout<br>
          <ul>
