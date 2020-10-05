@@ -9,7 +9,7 @@ Step 1:To create a paricular layout<br>
          <ul>
         <li> Create a JFrame folder in which create several <strong><em>Jframe files</strong></em> according to your need.<br></li>
         <li>Select any file and then click on design to make layout<br></li>
-        <li>From the <strong><em>pallete window</strong></em> insert the field required in your layout.<br></li>
+        <li>From the <strong><em>palette window</strong></em> insert the field required in your layout.<br></li>
          </ul>
      
 Step 2:For Registration<br>
@@ -31,7 +31,7 @@ Step 3:Login<br>
 
 Step 4:Menu<br>
         <ul>
-        <li>The menu card is created using <strong><em>scroll panel</strong></em> available in pallete.<br></li>
+        <li>The menu card is created using <strong><em>scroll panel</strong></em> available in palette.<br></li>
         <li>With the help of <strong><em>setText()</strong></em> the name,mobile no field directly contains name and mobile no in menu.<br></li>
         <li>Through <strong><em>random keyword</strong></em> bill no. is generated.<br></li>
         <li>Total of the items is dispayed as well as its bill is shown<br></li>
