@@ -47,7 +47,7 @@ Step 5:Payment<br>
 Step 6:Link files(register,login,forgot,new_password,menu) with database<br>
         <ul>
         <li>The data entered(username,mobile no,password ,confirm password etc.) is linked with the mysql database.<br></li>
-        <li><strong><em>Password of mysql should in entered in "enter your db password"</strong></em><br></li>
+        <li><strong><em>Password of mysql should be entered in "enter your db password"</strong></em><br></li>
         <li>local host is mostly 3306 if its different then change in local host<br> </li>
          </ul>
         The database is linked in two ways here: 
