@@ -116,7 +116,7 @@ public class new_password extends javax.swing.JFrame {
            
     String jdbcUrl = "jdbc:mysql://localhost:3306/restaurant";
     String username = "root";
-    String password = "2511";
+    String password = "enter your db password";
     String sql = "update register set password=? where m_number=?";
     String s="update register set c_password=? where m_number=?";
  boolean valid = true;
