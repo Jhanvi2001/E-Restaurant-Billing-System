@@ -5,17 +5,17 @@
 
 ##It will give you basic inforamtion regarding the project.
 
-###Step 1:To create a paricular layout:<br>
+Step 1:To create a paricular layout:<br>
          >>-Create a JFrame folder in which create several <strong><em>Jframe files</strong></em> according to your need.<br>
          >>-Select any file and then click on design to make layout<br>
          >>-From the <strong><em>pallete window</strong></em> insert the field required in your layout.<br>
      
-###Step 2:For Registration:<br>
+Step 2:For Registration:<br>
         >>-Password validation has been done.<br>
         >>-Values entered are stored in register table in mysql.<br>
         >>-If user has already been registered then can login from the button show below for login and then login file is opened<br>
       
-###Step 3:Login:<br>
+Step 3:Login:<br>
         >>-Username and password entered is compared with the data in register table in mysql.<br>
         >>-It is matches then the menu file is appears,if it deoesn't match then user are redirected to register page.<br>
         >>-If user has forgotten password then it can be reseted by clicking on forgot,it will open forgot file.<br>
@@ -23,7 +23,7 @@
         >>-The register table is also updated when user chnages password.<br>
         >>-After changing password user can relogin with new password.<br>
         
-###Step 4:Menu:<br>
+Step 4:Menu:<br>
         >>-The menu card is created using <strong><em>scroll panel</strong></em> available in pallete.<br>
         >>-With the help of <strong><em>setText()</strong></em> the name,mobile no field directly contains name and mobile no in menu.<br>
         >>-Through <strong><em>random keyword</strong></em> bill no. is generated.<br>
@@ -31,10 +31,10 @@
         >>-If user wants to pay by card then there is also an option for it,opens payment file<br>
         >>-While exiting the program ,data like name,mobile no. and total will be saved in the table.<br>
 
-###Step 5:Payment:<br>
+Step 5:Payment:<br>
         >>-If the data entered for payment is correct then user are directed to exit page if not then payment is refreshed.<br>
         
-###Step 6:Link files(register,login,forgot,new_password,menu) with database:<br>
+Step 6:Link files(register,login,forgot,new_password,menu) with database:<br>
         >>-The data entered(username,mobile no,password ,confirm password etc.) is linked with the mysql database.<br>
         >>-<strong><em>Password of mysql should in entered in "enter your db password"</strong></em><br>
         >>-local host is mostly 3306 if its different then change in local host<br> 
