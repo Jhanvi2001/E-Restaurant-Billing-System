@@ -6,7 +6,6 @@
 ##It will give you basic inforamtion regarding the project.
 
 Step 1:To create a paricular layout:<br>
-
          <ul>
         <li> Create a JFrame folder in which create several <strong><em>Jframe files</strong></em> according to your need.<br></li>
         <li>Select any file and then click on design to make layout<br></li>
@@ -14,7 +13,6 @@ Step 1:To create a paricular layout:<br>
          </ul>
      
 Step 2:For Registration:<br>
-
         <ul>
         <li>Password validation has been done.<br></li>
         <li>Values entered are stored in register table in mysql.<br></li>
@@ -22,7 +20,6 @@ Step 2:For Registration:<br>
         </ul>
          
 Step 3:Login:<br>
-
          <ul>
         <li>Username and password entered is compared with the data in register table in mysql.<br></li>
         <li>It is matches then the menu file is appears,if it deoesn't match then user are redirected to register page.<br></li>
@@ -33,8 +30,7 @@ Step 3:Login:<br>
          </ul>
 
 Step 4:Menu:<br>
-
-         <ul>
+        <ul>
         <li>The menu card is created using <strong><em>scroll panel</strong></em> available in pallete.<br></li>
         <li>With the help of <strong><em>setText()</strong></em> the name,mobile no field directly contains name and mobile no in menu.<br></li>
         <li>Through <strong><em>random keyword</strong></em> bill no. is generated.<br></li>
@@ -44,14 +40,12 @@ Step 4:Menu:<br>
         </ul>
         
 Step 5:Payment:<br>
-
          <ul>
         <li>If the data entered for payment is correct then user are directed to exit page if not then payment is refreshed.<br></li>
          </ul>
          
 Step 6:Link files(register,login,forgot,new_password,menu) with database:<br>
-
-         <ul>
+        <ul>
         <li>The data entered(username,mobile no,password ,confirm password etc.) is linked with the mysql database.<br></li>
         <li><strong><em>Password of mysql should in entered in "enter your db password"</strong></em><br></li>
         <li>local host is mostly 3306 if its different then change in local host<br> </li>
