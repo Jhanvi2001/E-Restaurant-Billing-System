@@ -2554,7 +2554,7 @@ String iTax,iTotal;
       + "(mname,num,ftotal) VALUES (?,?,?)";
     String jdbcUrl = "jdbc:mysql://localhost:3306/restaurant";
     String username = "root";
-    String password = "2511";
+    String password = "enter your db password";
 
     Connection conn = null;
     
