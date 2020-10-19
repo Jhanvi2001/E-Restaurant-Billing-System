@@ -84,9 +84,9 @@ Connection con=null;
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 350, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Redison Restaurant");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel1.setText("DIL HAI HINDUSTANI RESTAURANT");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, -1));
 
         jButton2.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 0, 0));
@@ -118,6 +118,7 @@ Connection con=null;
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -135,7 +136,7 @@ String name,password,m_number;
     try {
         Class.forName("java.sql.DriverManager");
         @SuppressWarnings("LocalVariableHidesMemberVariable")
-        Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant","root","enter your db password");
+        Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant","root","2511");
         
         @SuppressWarnings("LocalVariableHidesMemberVariable")
          PreparedStatement ps;
@@ -149,14 +150,15 @@ String name,password,m_number;
            {
                JOptionPane.showMessageDialog(null,"name,mobile no. and password matches");
               
-              menu t=new menu();              
-               menu.mname.setText(name);
-               menu.num.setText(m_number);
-                        t.setVisible(true);
+              
+                              
+               
+               trial l=new trial();
+                trial.mname.setText(name);
+               trial.num.setText(m_number);
+                        l.setVisible(true);
                         
                        dispose();
-                       
-                       
                
            }
            else{

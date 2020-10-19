@@ -29,6 +29,7 @@ public class start extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -37,18 +38,30 @@ public class start extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setFont(new java.awt.Font("Old English Text MT", 1, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("OCR A Extended", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("OPEN");
+        jButton2.setText("CUSTOMER");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 420, 90, 30));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 310, 110, 30));
+
+        jButton3.setBackground(new java.awt.Color(0, 0, 0));
+        jButton3.setFont(new java.awt.Font("OCR A Extended", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("ADMIN");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, 90, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Circuit Lab\\OneDrive\\Desktop\\Restaurant\\Restaurant\\src\\restaurant\\maxresdefault.jpg")); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 500));
+        jLabel1.setToolTipText("");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -62,13 +75,20 @@ public class start extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-      register r=new register();
+     selection r=new selection();
       r.setVisible(true);
       dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        ulogin r=new ulogin();
+      r.setVisible(true);
+      dispose();         // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -107,6 +127,7 @@ public class start extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

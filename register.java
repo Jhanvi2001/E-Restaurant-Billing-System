@@ -109,8 +109,8 @@ public class register extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("REDISON RESTAURANT");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
+        jLabel5.setText("DIL HAI HINDUSTANI RESTAURANT");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, -1, -1));
 
         jButton2.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(204, 0, 0));
@@ -138,6 +138,7 @@ public class register extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -197,7 +198,7 @@ public class register extends javax.swing.JFrame {
                         try 
        {
            Class.forName("java.sql.DriverManager");
-           Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant","root","enter your db password");
+           Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant","root","2511");
            Statement stmt=(Statement)con.createStatement();
            String q="insert into register values('"+name+"','"+m_number+"','"+password+"','"+c_password+"');";
            stmt.executeUpdate(q);
@@ -208,12 +209,14 @@ public class register extends javax.swing.JFrame {
        }   
                         System.out.println("Password is valid.");
                          JOptionPane.showMessageDialog(null,"successfully registered");
-                      menu t=new menu();
-                                 
-              menu.mname.setText(name);
-                       
-              menu.num.setText(m_number);
-                        t.setVisible(true);
+                     
+                     trial l=new trial();
+                                   
+               trial.mname.setText(name);
+               trial.num.setText(m_number);
+              
+               
+                        l.setVisible(true);
                         
                        dispose();
                        

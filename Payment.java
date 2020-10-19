@@ -124,17 +124,17 @@ public class Payment extends javax.swing.JFrame {
         jPanel2.add(pay, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 430, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
-        jLabel6.setText("Redison Restaurant");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
+        jLabel6.setText("DIL HAI HINDUSTANI RESTUARANT");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Circuit Lab\\OneDrive\\Desktop\\Restaurant\\Restaurant\\src\\restaurant\\1.jpg")); // NOI18N
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 480));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 0, 710, 480));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,6 +142,7 @@ public class Payment extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     @SuppressWarnings("UnusedAssignment")

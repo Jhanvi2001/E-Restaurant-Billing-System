@@ -29,7 +29,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -46,7 +46,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel2" min="-2" pref="680" max="-2" attributes="0"/>
+          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -208,11 +208,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Trebuchet MS" size="36" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Redison Restaurant"/>
+            <Property name="text" type="java.lang.String" value="DIL HAI HINDUSTANI RESTUARANT"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="170" y="30" width="-1" height="-1"/>
+              <AbsoluteConstraints x="70" y="20" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -224,7 +224,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="0" width="680" height="480"/>
+              <AbsoluteConstraints x="-30" y="0" width="710" height="480"/>
             </Constraint>
           </Constraints>
         </Component>

@@ -19,16 +19,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.print.Printer;
 import java.sql.ResultSet;
+import static restaurant.menu.mname;
+import static restaurant.menu.num;
 
 /**
  *
  * @author Circuit Lab
  */
-public class menu extends javax.swing.JFrame {
+public class trial extends javax.swing.JFrame {
 String iTax,iTotal;
     double [] itemcost = new double[100];
     /** Creates new form trial */
-    public menu() {
+    public trial() {
         initComponents();
     }
 
@@ -41,30 +43,7 @@ String iTax,iTotal;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel3 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        pbill = new javax.swing.JTextArea();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        mname = new javax.swing.JTextField();
-        num = new javax.swing.JTextField();
-        billnum = new javax.swing.JTextField();
-        TOTAL = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        tax = new javax.swing.JTextField();
-        ftotal = new javax.swing.JTextField();
-        label7 = new java.awt.Label();
-        label8 = new java.awt.Label();
-        exit = new java.awt.Button();
-        button1 = new java.awt.Button();
-        jLabel5 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
@@ -186,6 +165,30 @@ String iTax,iTotal;
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        pbill = new javax.swing.JTextArea();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        mname = new javax.swing.JTextField();
+        num = new javax.swing.JTextField();
+        billnum = new javax.swing.JTextField();
+        TOTAL = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        tax = new javax.swing.JTextField();
+        ftotal = new javax.swing.JTextField();
+        label7 = new java.awt.Label();
+        label8 = new java.awt.Label();
+        DL = new java.awt.Label();
+        FDL = new javax.swing.JTextField();
+        exit = new java.awt.Button();
+        button1 = new java.awt.Button();
+        jLabel5 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 0, 255));
@@ -200,210 +203,6 @@ String iTax,iTotal;
 
         jPanel3.setBackground(new java.awt.Color(102, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 10));
-
-        pbill.setColumns(20);
-        pbill.setRows(5);
-        jScrollPane3.setViewportView(pbill);
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 530, Short.MAX_VALUE)
-        );
-
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(836, 90, -1, 550));
-
-        jLabel3.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
-        jLabel3.setText("Menu");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 32, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
-        jLabel4.setText("Customer Details");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(527, 32, -1, -1));
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 10));
-
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel8.setText("Name");
-
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel9.setText("Mobile No.");
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel2.setText("Bill No.");
-
-        mname.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-
-        num.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        num.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                numActionPerformed(evt);
-            }
-        });
-
-        billnum.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-
-        TOTAL.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        TOTAL.setText("TOTAL");
-        TOTAL.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                TOTALMouseClicked(evt);
-            }
-        });
-        TOTAL.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TOTALActionPerformed(evt);
-            }
-        });
-
-        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jButton2.setText("RESET");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        tax.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        tax.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                taxMouseClicked(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                taxMousePressed(evt);
-            }
-        });
-        tax.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                taxActionPerformed(evt);
-            }
-        });
-
-        ftotal.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-
-        label7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        label7.setText("TAX");
-
-        label8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        label8.setText("TOTAL");
-
-        exit.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        exit.setLabel("EXIT");
-        exit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
-            }
-        });
-
-        button1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        button1.setLabel("PRINT");
-        button1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1ActionPerformed(evt);
-            }
-        });
-
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel5.setText("PAYMENT BY:");
-
-        jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Card" }));
-        jComboBox1.setAutoscrolls(true);
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(12, 12, 12))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TOTAL)
-                                    .addComponent(label7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tax, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel9))
-                                .addGap(121, 138, Short.MAX_VALUE)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(num, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE)
-                                    .addComponent(mname)
-                                    .addComponent(billnum)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(95, 95, 95)
-                                .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ftotal, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(mname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(num, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(billnum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(39, 39, 39)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TOTAL)
-                    .addComponent(jButton2))
-                .addGap(33, 33, 33)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(label7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tax, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(label8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ftotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(button1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(exit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27))
-        );
-
-        jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 360, 550));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 10));
 
@@ -1150,774 +949,165 @@ String iTax,iTotal;
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 530, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
         );
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 450, 550));
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 450, 600));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1270, 640));
+        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 10));
+
+        pbill.setColumns(20);
+        pbill.setRows(5);
+        jScrollPane3.setViewportView(pbill);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 580, Short.MAX_VALUE)
+        );
+
+        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 90, 420, 600));
+
+        jLabel3.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
+        jLabel3.setText("Menu");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 32, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
+        jLabel4.setText("Customer Details");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(527, 32, -1, -1));
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 10));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel8.setText("Name");
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 30, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel9.setText("Mobile No.");
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel2.setText("Bill No.");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+
+        mname.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jPanel2.add(mname, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 110, -1));
+
+        num.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        num.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numActionPerformed(evt);
+            }
+        });
+        jPanel2.add(num, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 110, -1));
+
+        billnum.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jPanel2.add(billnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 110, -1));
+
+        TOTAL.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        TOTAL.setText("TOTAL");
+        TOTAL.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TOTALMouseClicked(evt);
+            }
+        });
+        TOTAL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TOTALActionPerformed(evt);
+            }
+        });
+        jPanel2.add(TOTAL, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+
+        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jButton2.setText("RESET");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, -1, -1));
+
+        tax.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        tax.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                taxMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                taxMousePressed(evt);
+            }
+        });
+        tax.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                taxActionPerformed(evt);
+            }
+        });
+        jPanel2.add(tax, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, 110, -1));
+
+        ftotal.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jPanel2.add(ftotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 110, -1));
+
+        label7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label7.setText("TAX");
+        jPanel2.add(label7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
+
+        label8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        label8.setText("TOTAL");
+        jPanel2.add(label8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, -1));
+
+        DL.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        DL.setText("DELIVERY CHARGE");
+        jPanel2.add(DL, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 184, -1));
+
+        FDL.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jPanel2.add(FDL, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 420, 110, -1));
+
+        exit.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        exit.setLabel("EXIT");
+        exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitActionPerformed(evt);
+            }
+        });
+        jPanel2.add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 530, -1, -1));
+
+        button1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        button1.setLabel("PRINT");
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel5.setText("PAYMENT BY:");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, -1, -1));
+
+        jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Card" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, 110, -1));
+
+        jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 390, 600));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 1880));
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void numActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_numActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_numActionPerformed
-
-    private void TOTALMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TOTALMouseClicked
-        // TODO add your handling code here:
-        for(int j=0;j<=36;j++){
-
-            itemcost[40]=itemcost[40]+itemcost[j];
-        }
-        
-       
-       
-         
-       
-         iTax=String.format("%.2f", itemcost[40]*18/100);
-        iTotal=String.format("%.2f", itemcost[40] + itemcost[40]*18/100);
-        tax.setText(iTax);
-        ftotal.setText(iTotal);
-        billnum.setText(Integer.toString(1325+ (int) (Math.random()*4238)));
-        pbill.setEnabled(true);
-
-        pbill.append("\tCustomer Billing System \n");
-
-        pbill.append("\nBill No." + billnum.getText() +
-                "\nCustomer Name:" + mname.getText() +
-                "       Mobile No." +num.getText() +
-            "\n==========================================================" +
-            "\n==========================================================");
-        if(jCheckBox1.isSelected())
-        {
-            pbill.append("\n" + jCheckBox1.getText() + "  Qty. " + I1.getText() + " Rs. " + itemcost[0] + "\n");
-        }
-        if(jCheckBox2.isSelected())
-        {
-            pbill.append("\n" + jCheckBox2.getText() + "  Qty. " + I2.getText() + " Rs. " + itemcost[1] + "\n");
-        }
-        if(jCheckBox3.isSelected())
-        {
-            pbill.append("\n" + jCheckBox3.getText() + "  Qty. " + I3.getText() + " Rs. " + itemcost[2] + "\n");
-        }
-        if(jCheckBox4.isSelected())
-        {
-            pbill.append("\n" + jCheckBox4.getText() + "  Qty. " + I4.getText() + " Rs. " + itemcost[3] + "\n");
-        }
-        if(jCheckBox5.isSelected())
-        {
-            pbill.append("\n" + jCheckBox5.getText() + "  Qty. " + I5.getText() + " Rs. " + itemcost[4] + "\n");
-        }
-        if(jCheckBox6.isSelected())
-        {
-            pbill.append("\n" + jCheckBox6.getText() + "  Qty. " + I6.getText() + " Rs. " + itemcost[5] + "\n");
-        }
-        if(jCheckBox7.isSelected())
-        {
-            pbill.append("\n" + jCheckBox7.getText() + "  Qty. " + I7.getText() + " Rs. " + itemcost[6] + "\n");
-        }
-        if(jCheckBox8.isSelected())
-        {
-            pbill.append("\n" + jCheckBox8.getText() + "  Qty. " + I8.getText() + " Rs. " + itemcost[7] + "\n");
-        }
-        if(jCheckBox9.isSelected())
-        {
-            pbill.append("\n" + jCheckBox9.getText() + "  Qty. " + I9.getText() + " Rs. " + itemcost[8] + "\n");
-        }
-        if(jCheckBox10.isSelected())
-        {
-            pbill.append("\n" + jCheckBox10.getText() + "  Qty. " + I10.getText() + " Rs. " + itemcost[9] + "\n");
-        }
-        if(jCheckBox11.isSelected())
-        {
-            pbill.append("\n" + jCheckBox11.getText() + "  Qty. " + I11.getText() + " Rs. " + itemcost[10] + "\n");
-        }
-        if(jCheckBox12.isSelected())
-        {
-            pbill.append("\n" + jCheckBox12.getText() + "  Qty. " + I12.getText() + " Rs. " + itemcost[11] + "\n");
-        }
-        if(jCheckBox13.isSelected())
-        {
-            pbill.append("\n" + jCheckBox13.getText() + "  Qty. " + I13.getText() + " Rs. " + itemcost[12] + "\n");
-        }
-        if(jCheckBox14.isSelected())
-        {
-            pbill.append("\n" + jCheckBox14.getText() + "  Qty. " + I14.getText() + " Rs. " + itemcost[13] + "\n");
-        }
-        if(jCheckBox15.isSelected())
-        {
-            pbill.append("\n" + jCheckBox15.getText() + "  Qty. " + I15.getText() + " Rs. " + itemcost[14] + "\n");
-        }
-        if(jCheckBox16.isSelected())
-        {
-            pbill.append("\n" + jCheckBox16.getText() + "  Qty. " + I16.getText() + " Rs. " + itemcost[15] + "\n");
-        }
-        if(jCheckBox17.isSelected())
-        {
-            pbill.append("\n" + jCheckBox17.getText() + "  Qty. " + I17.getText() + " Rs. " + itemcost[16] + "\n");
-        }
-        if(jCheckBox18.isSelected())
-        {
-            pbill.append("\n" + jCheckBox18.getText() + "  Qty. " + I18.getText() + " Rs. " + itemcost[17] + "\n");
-        }
-        if(jCheckBox19.isSelected())
-        {
-            pbill.append("\n" + jCheckBox19.getText() + "  Qty. " + I19.getText() + " Rs. " + itemcost[18] + "\n");
-        }
-        if(jCheckBox20.isSelected())
-        {
-            pbill.append("\n" + jCheckBox20.getText() + "  Qty. " + I20.getText() + " Rs. " + itemcost[19] + "\n");
-        }
-        if(jCheckBox21.isSelected())
-        {
-            pbill.append("\n" + jCheckBox21.getText() + "  Qty. " + I21.getText() + " Rs. " + itemcost[20] + "\n");
-        }
-        if(jCheckBox22.isSelected())
-        {
-            pbill.append("\n" + jCheckBox22.getText() + "  Qty. " + I22.getText() + " Rs. " + itemcost[21] + "\n");
-        }
-        if(jCheckBox23.isSelected())
-        {
-            pbill.append("\n" + jCheckBox23.getText() + "  Qty. " + I23.getText() + " Rs. " + itemcost[22] + "\n");
-        }
-        if(jCheckBox24.isSelected())
-        {
-            pbill.append("\n" + jCheckBox24.getText() + "  Qty. " + I24.getText() + " Rs. " + itemcost[23] + "\n");
-        }
-        if(jCheckBox25.isSelected())
-        {
-            pbill.append("\n" + jCheckBox25.getText() + "  Qty. " + I25.getText() + " Rs. " + itemcost[24] + "\n");
-        }
-        if(jCheckBox26.isSelected())
-        {
-            pbill.append("\n" + jCheckBox26.getText() + "  Qty. " + I26.getText() + " Rs. " + itemcost[25] + "\n");
-        }
-        if(jCheckBox27.isSelected())
-        {
-            pbill.append("\n" + jCheckBox27.getText() + "  Qty. " + I27.getText() + " Rs. " + itemcost[26] + "\n");
-        } if(jCheckBox28.isSelected())
-        {
-            pbill.append("\n" + jCheckBox28.getText() + "  Qty. " + I28.getText() + " Rs. " + itemcost[27] + "\n");
-        }
-        if(jCheckBox29.isSelected())
-        {
-            pbill.append("\n" + jCheckBox29.getText() + "  Qty. " + I29.getText() + " Rs. " + itemcost[28] + "\n");
-        }
-        if(jCheckBox30.isSelected())
-        {
-            pbill.append("\n" + jCheckBox30.getText() + "  Qty. " + I30.getText() + " Rs. " + itemcost[29] + "\n");
-        }
-        if(jCheckBox31.isSelected())
-        {
-            pbill.append("\n" + jCheckBox31.getText() + "  Qty. " + I31.getText() + " Rs. " + itemcost[30] + "\n");
-        }
-        if(jCheckBox32.isSelected())
-        {
-            pbill.append("\n" + jCheckBox32.getText() + "  Qty. " + I32.getText() + " Rs. " + itemcost[31] + "\n");
-        }
-        if(jCheckBox33.isSelected())
-        {
-            pbill.append("\n" + jCheckBox33.getText() + "  Qty. " + I33.getText() + " Rs. " + itemcost[32] + "\n");
-        }
-        if(jCheckBox34.isSelected())
-        {
-            pbill.append("\n" + jCheckBox34.getText() + "  Qty. " + I34.getText() + " Rs. " + itemcost[33] + "\n");
-        }
-        if(jCheckBox35.isSelected())
-        {
-            pbill.append("\n" + jCheckBox35.getText() + "  Qty. " + I35.getText() + " Rs. " + itemcost[34] + "\n");
-        }
-        if(jCheckBox36.isSelected())
-        {
-            pbill.append("\n" + jCheckBox36.getText() + "  Qty. " + I36.getText() + " Rs. " + itemcost[35] + "\n");
-        }
-        if(jCheckBox37.isSelected())
-        {
-            pbill.append("\n" + jCheckBox37.getText() + "  Qty. " + I37.getText() + " Rs. " + itemcost[36] + "\n");
-        }
-        pbill.append("\n Subtotal:" + itemcost[40] +"\n");
-        pbill.append("\n Tax:" + iTax +"\n");
-        pbill.append("\n Total:" + iTotal +"\n");
-
-    }//GEN-LAST:event_TOTALMouseClicked
-
-    private void TOTALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TOTALActionPerformed
-        // TODO add your handling code here:
-        if(jCheckBox1.isSelected())
-        {
-            itemcost[0]=Double.parseDouble(I1.getText()) * 70.00;
-        }
-
-        if(jCheckBox2.isSelected())
-        {
-            itemcost[1]=Double.parseDouble(I2.getText()) * 80.00;
-        }
-
-        if(jCheckBox3.isSelected())
-        {
-            itemcost[2]=Double.parseDouble(I3.getText()) * 80.00;
-        }
-
-        if(jCheckBox4.isSelected())
-        {
-            itemcost[3]=Double.parseDouble(I4.getText()) * 80.00;
-        }
-
-        if(jCheckBox5.isSelected())
-        {
-            itemcost[4]=Double.parseDouble(I5.getText()) * 80.00;
-        }
-
-        if(jCheckBox6.isSelected())
-        {
-            itemcost[5]=Double.parseDouble(I6.getText()) * 80.00;
-        }
-
-        if(jCheckBox7.isSelected())
-        {
-            itemcost[6]=Double.parseDouble(I7.getText()) * 80.00;
-        }
-
-        if(jCheckBox8.isSelected())
-        {
-            itemcost[7]=Double.parseDouble(I8.getText()) * 30.00;
-        }
-
-        if(jCheckBox9.isSelected())
-        {
-            itemcost[8]=Double.parseDouble(I9.getText()) * 40.00;
-        }
-
-        if(jCheckBox10.isSelected())
-        {
-            itemcost[9]=Double.parseDouble(I10.getText()) * 45.00;
-        }
-
-        if(jCheckBox11.isSelected())
-        {
-            itemcost[10]=Double.parseDouble(I11.getText()) * 45.00;
-        }
-
-        if(jCheckBox12.isSelected())
-        {
-            itemcost[11]=Double.parseDouble(I12.getText()) * 60.00;
-        }
-
-        if(jCheckBox13.isSelected())
-        {
-            itemcost[12]=Double.parseDouble(I13.getText()) * 80.00;
-        }
-
-        if(jCheckBox14.isSelected())
-        {
-            itemcost[13]=Double.parseDouble(I14.getText()) * 70.00;
-        }
-
-        if(jCheckBox15.isSelected())
-        {
-            itemcost[14]=Double.parseDouble(I15.getText()) * 50.00;
-        }
-
-        if(jCheckBox16.isSelected())
-        {
-            itemcost[15]=Double.parseDouble(I16.getText()) * 60.00;
-        }
-
-        if(jCheckBox17.isSelected())
-        {
-            itemcost[16]=Double.parseDouble(I17.getText()) * 40.00;
-        }
-
-        if(jCheckBox18.isSelected())
-        {
-            itemcost[17]=Double.parseDouble(I18.getText()) * 100.00;
-        }
-
-        if(jCheckBox19.isSelected())
-        {
-            itemcost[18]=Double.parseDouble(I19.getText()) * 500.00;
-        }
-
-        if(jCheckBox20.isSelected())
-        {
-            itemcost[19]=Double.parseDouble(I20.getText()) * 120.00;
-        }
-
-        if(jCheckBox21.isSelected())
-        {
-            itemcost[20]=Double.parseDouble(I21.getText()) * 100.00;
-        }
-
-        if(jCheckBox22.isSelected())
-        {
-            itemcost[21]=Double.parseDouble(I22.getText()) * 120.00;
-        }
-
-        if(jCheckBox23.isSelected())
-        {
-            itemcost[22]=Double.parseDouble(I23.getText()) * 140.00;
-        }
-
-        if(jCheckBox24.isSelected())
-        {
-            itemcost[23]=Double.parseDouble(I24.getText()) * 130.00;
-        }
-
-        if(jCheckBox25.isSelected())
-        {
-            itemcost[24]=Double.parseDouble(I25.getText()) * 70.00;
-        }
-
-        if(jCheckBox26.isSelected())
-        {
-            itemcost[25]=Double.parseDouble(I26.getText()) * 80.00;
-        }
-
-        if(jCheckBox27.isSelected())
-        {
-            itemcost[26]=Double.parseDouble(I27.getText()) * 50.00;
-        }
-
-        if(jCheckBox28.isSelected())
-        {
-            itemcost[27]=Double.parseDouble(I28.getText()) * 70.00;
-        }
-
-        if(jCheckBox29.isSelected())
-        {
-            itemcost[28]=Double.parseDouble(I29.getText()) * 70.00;
-        }
-
-        if(jCheckBox30.isSelected())
-        {
-            itemcost[29]=Double.parseDouble(I30.getText()) * 70.00;
-        }
-
-        if(jCheckBox31.isSelected())
-        {
-            itemcost[30]=Double.parseDouble(I31.getText()) * 30.00;
-        }
-
-        if(jCheckBox32.isSelected())
-        {
-            itemcost[31]=Double.parseDouble(I32.getText()) * 30.00;
-        }
-
-        if(jCheckBox33.isSelected())
-        {
-            itemcost[32]=Double.parseDouble(I33.getText()) * 30.00;
-        }
-
-        if(jCheckBox34.isSelected())
-        {
-            itemcost[33]=Double.parseDouble(I34.getText()) * 30.00;
-        }
-
-        if(jCheckBox35.isSelected())
-        {
-            itemcost[34]=Double.parseDouble(I35.getText()) * 30.00;
-        }
-
-        if(jCheckBox36.isSelected())
-        {
-            itemcost[35]=Double.parseDouble(I36.getText()) * 30.00;
-        }
-
-        if(jCheckBox37.isSelected())
-        {
-            itemcost[36]=Double.parseDouble(I37.getText()) * 20.00;
-        }
-
-    }//GEN-LAST:event_TOTALActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        I1.setText(null);
-        I2.setText(null);
-        I3.setText(null);
-        I4.setText(null);
-        I5.setText(null);
-        I6.setText(null);
-        I7.setText(null);
-        I8.setText(null);
-        I9.setText(null);
-        I10.setText(null);
-        I11.setText(null);
-        I12.setText(null);
-        I13.setText(null);
-        I14.setText(null);
-        I15.setText(null);
-        I16.setText(null);
-        I17.setText(null);
-        I18.setText(null);
-        I19.setText(null);
-        I20.setText(null);
-        I21.setText(null);
-        I22.setText(null);
-        I23.setText(null);
-        I24.setText(null);
-        I25.setText(null);
-        I26.setText(null);
-        I27.setText(null);
-        I28.setText(null);
-        I29.setText(null);
-        I30.setText(null);
-        I31.setText(null);
-        I32.setText(null);
-        I33.setText(null);
-        I34.setText(null);
-        I35.setText(null);
-        I36.setText(null);
-        I37.setText(null);
-
-        I1.setEnabled(false);
-        I2.setEnabled(false);
-        I3.setEnabled(false);
-        I4.setEnabled(false);
-        I5.setEnabled(false);
-        I6.setEnabled(false);
-        I7.setEnabled(false);
-        I8.setEnabled(false);
-        I9.setEnabled(false);
-        I10.setEnabled(false);
-        I11.setEnabled(false);
-        I12.setEnabled(false);
-        I13.setEnabled(false);
-        I14.setEnabled(false);
-        I15.setEnabled(false);
-        I16.setEnabled(false);
-        I17.setEnabled(false);
-        I18.setEnabled(false);
-        I19.setEnabled(false);
-        I20.setEnabled(false);
-        I21.setEnabled(false);
-        I22.setEnabled(false);
-        I23.setEnabled(false);
-        I24.setEnabled(false);
-        I25.setEnabled(false);
-        I26.setEnabled(false);
-        I27.setEnabled(false);
-        I28.setEnabled(false);
-        I29.setEnabled(false);
-        I30.setEnabled(false);
-        I31.setEnabled(false);
-        I32.setEnabled(false);
-        I33.setEnabled(false);
-        I34.setEnabled(false);
-        I35.setEnabled(false);
-        I36.setEnabled(false);
-        I37.setEnabled(false);
-
-        jCheckBox1.setSelected(false);
-        jCheckBox2.setSelected(false);
-        jCheckBox3.setSelected(false);
-        jCheckBox4.setSelected(false);
-        jCheckBox5.setSelected(false);
-        jCheckBox6.setSelected(false);
-        jCheckBox7.setSelected(false);
-        jCheckBox8.setSelected(false);
-        jCheckBox9.setSelected(false);
-        jCheckBox10.setSelected(false);
-        jCheckBox11.setSelected(false);
-        jCheckBox12.setSelected(false);
-        jCheckBox13.setSelected(false);
-        jCheckBox14.setSelected(false);
-        jCheckBox15.setSelected(false);
-        jCheckBox16.setSelected(false);
-        jCheckBox17.setSelected(false);
-        jCheckBox18.setSelected(false);
-        jCheckBox19.setSelected(false);
-        jCheckBox20.setSelected(false);
-        jCheckBox21.setSelected(false);
-        jCheckBox22.setSelected(false);
-        jCheckBox23.setSelected(false);
-        jCheckBox24.setSelected(false);
-        jCheckBox25.setSelected(false);
-        jCheckBox26.setSelected(false);
-        jCheckBox27.setSelected(false);
-        jCheckBox28.setSelected(false);
-        jCheckBox29.setSelected(false);
-        jCheckBox30.setSelected(false);
-        jCheckBox31.setSelected(false);
-        jCheckBox32.setSelected(false);
-        jCheckBox33.setSelected(false);
-        jCheckBox34.setSelected(false);
-        jCheckBox35.setSelected(false);
-        jCheckBox36.setSelected(false);
-        jCheckBox36.setSelected(false);
-        jCheckBox37.setSelected(false);
-
-        mname.setText(null);
-
-        num.setText(null);
-        
-
-        billnum.setText(null);
-        tax.setText(null);
-        ftotal.setText(null);
-        
-
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void taxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_taxMouseClicked
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_taxMouseClicked
-
-    private void taxMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_taxMousePressed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_taxMousePressed
-
-    private void taxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taxActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_taxActionPerformed
-
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
-        // TODO add your handling code here:
-
-        try
-        {
-            pbill.print();
-        }
-        catch(java.awt.print.PrinterException e)
-        {
-            System.err.format("No Printer Found", e.getMessage());
-        }
-    }//GEN-LAST:event_button1ActionPerformed
-
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-  String m,n,f;
-          m=mname.getText();
-          n=num.getText();
-          f=ftotal.getText();
-   
-        String INSERT_SQL="INSERT INTO trial "
-      + "(mname,num,ftotal) VALUES (?,?,?)";
-    String jdbcUrl = "jdbc:mysql://localhost:3306/restaurant";
-    String username = "root";
-    String password = "2511";
-
-    Connection conn = null;
-    
-    PreparedStatement stmt = null;
- 
-    try {
-      //Open connection
-      conn = DriverManager.getConnection(jdbcUrl, username, password);
-      
-      //Create statement
-       stmt = conn.prepareStatement(INSERT_SQL);
-
-      // Insert first record
-      stmt.setString(1, m);
-      stmt.setString(2,n);
-      stmt.setString(3,f);
-      
-      stmt.executeUpdate();
-      System.out.println("Records inserted");
-
-    } catch (SQLException e) {
-      e.printStackTrace();
-    } finally {
-      try {
-        // Close connection
-        if (stmt != null) {
-          stmt.close();
-        }
-        if (conn != null) {
-          conn.close();
-        }
-      } catch (SQLException e) {
-        e.printStackTrace();
-      }
-    }
-    exit e=new exit();
-    e.setVisible(true);
-    dispose();
-  
-  
-        
-    }//GEN-LAST:event_exitActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-         
-        Object selectedItem = jComboBox1.getSelectedItem();
-         if ("Card".equals(jComboBox1.getSelectedItem().toString())) {
-                 String m,n,f;
-          m=mname.getText();
-          n=num.getText();
-          f=ftotal.getText();
-   
-        String INSERT_SQL="INSERT INTO trial "
-      + "(mname,num,ftotal) VALUES (?,?,?)";
-    String jdbcUrl = "jdbc:mysql://localhost:3306/restaurant";
-    String username = "root";
-    String password = "2511";
-
-    Connection conn = null;
-    
-    PreparedStatement stmt = null;
- 
-    try {
-      //Open connection
-      conn = DriverManager.getConnection(jdbcUrl, username, password);
-      
-      //Create statement
-       stmt = conn.prepareStatement(INSERT_SQL);
-
-      // Insert first record
-      stmt.setString(1, m);
-      stmt.setString(2,n);
-      stmt.setString(3,f);
-      
-      stmt.executeUpdate();
-      System.out.println("Records inserted");
-
-    } catch (SQLException e) {
-      e.printStackTrace();
-    } finally {
-      try {
-        // Close connection
-        if (stmt != null) {
-          stmt.close();
-        }
-        if (conn != null) {
-          conn.close();
-        }
-      } catch (SQLException e) {
-        e.printStackTrace();
-      }
-    }
-             Payment pframe=new Payment();
-                        
-                        pframe.setVisible(true);
-                        dispose();}
-       
-         
-            // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-    
-    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-I1.setText(null);
-        I2.setText(null);
-        I3.setText(null);
-        I4.setText(null);
-        I5.setText(null);
-        I6.setText(null);
-        I7.setText(null);
-        I8.setText(null);
-        I9.setText(null);
-        I10.setText(null);
-        I11.setText(null);
-        I12.setText(null);
-        I13.setText(null);
-        I14.setText(null);
-        I15.setText(null);
-        I16.setText(null);
-        I17.setText(null);
-        I18.setText(null);
-        I19.setText(null);
-        I20.setText(null);
-        I21.setText(null);
-        I22.setText(null);
-        I23.setText(null);
-        I24.setText(null);
-        I25.setText(null);
-        I26.setText(null);
-        I27.setText(null);
-        I28.setText(null);
-        I29.setText(null);
-        I30.setText(null);
-        I31.setText(null);
-        I32.setText(null);
-        I33.setText(null);
-        I34.setText(null);
-        I35.setText(null);
-        I36.setText(null);
-        I37.setText(null);
-
-        I1.setEnabled(false);
-        I2.setEnabled(false);
-        I3.setEnabled(false);
-        I4.setEnabled(false);
-        I5.setEnabled(false);
-        I6.setEnabled(false);
-        I7.setEnabled(false);
-        I8.setEnabled(false);
-        I9.setEnabled(false);
-        I10.setEnabled(false);
-        I11.setEnabled(false);
-        I12.setEnabled(false);
-        I13.setEnabled(false);
-        I14.setEnabled(false);
-        I15.setEnabled(false);
-        I16.setEnabled(false);
-        I17.setEnabled(false);
-        I18.setEnabled(false);
-        I19.setEnabled(false);
-        I20.setEnabled(false);
-        I21.setEnabled(false);
-        I22.setEnabled(false);
-        I23.setEnabled(false);
-        I24.setEnabled(false);
-        I25.setEnabled(false);
-        I26.setEnabled(false);
-        I27.setEnabled(false);
-        I28.setEnabled(false);
-        I29.setEnabled(false);
-        I30.setEnabled(false);
-        I31.setEnabled(false);
-        I32.setEnabled(false);
-        I33.setEnabled(false);
-        I34.setEnabled(false);
-        I35.setEnabled(false);
-        I36.setEnabled(false);
-        I37.setEnabled(false);
-
-        jCheckBox1.setSelected(false);
-        jCheckBox2.setSelected(false);
-        jCheckBox3.setSelected(false);
-        jCheckBox4.setSelected(false);
-        jCheckBox5.setSelected(false);
-        jCheckBox6.setSelected(false);
-        jCheckBox7.setSelected(false);
-        jCheckBox8.setSelected(false);
-        jCheckBox9.setSelected(false);
-        jCheckBox10.setSelected(false);
-        jCheckBox11.setSelected(false);
-        jCheckBox12.setSelected(false);
-        jCheckBox13.setSelected(false);
-        jCheckBox14.setSelected(false);
-        jCheckBox15.setSelected(false);
-        jCheckBox16.setSelected(false);
-        jCheckBox17.setSelected(false);
-        jCheckBox18.setSelected(false);
-        jCheckBox19.setSelected(false);
-        jCheckBox20.setSelected(false);
-        jCheckBox21.setSelected(false);
-        jCheckBox22.setSelected(false);
-        jCheckBox23.setSelected(false);
-        jCheckBox24.setSelected(false);
-        jCheckBox25.setSelected(false);
-        jCheckBox26.setSelected(false);
-        jCheckBox27.setSelected(false);
-        jCheckBox28.setSelected(false);
-        jCheckBox29.setSelected(false);
-        jCheckBox30.setSelected(false);
-        jCheckBox31.setSelected(false);
-        jCheckBox32.setSelected(false);
-        jCheckBox33.setSelected(false);
-        jCheckBox34.setSelected(false);
-        jCheckBox35.setSelected(false);
-        jCheckBox36.setSelected(false);
-        jCheckBox36.setSelected(false);
-        jCheckBox37.setSelected(false);
-          // TODO add your handling code here:
-    }//GEN-LAST:event_formWindowActivated
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
@@ -1932,10 +1122,6 @@ I1.setText(null);
             I1.setText(null);
         }
     }//GEN-LAST:event_jCheckBox1ActionPerformed
-
-    private void I1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_I1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_I1ActionPerformed
 
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
         // TODO add your handling code here:
@@ -2520,7 +1706,721 @@ I1.setText(null);
     private void I37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_I37ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_I37ActionPerformed
+
+    private void TOTALMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TOTALMouseClicked
+        // TODO add your handling code here:
+        for(int j=0;j<=36;j++){
+
+            itemcost[40]=itemcost[40]+itemcost[j];
+        }
+        itemcost[40]=itemcost[40]+30;
+        iTax=String.format("%.2f", itemcost[40]*18/100);
+        iTotal=String.format("%.2f", itemcost[40] + itemcost[40]*18/100);
+        tax.setText(iTax);
+        ftotal.setText(iTotal);
+        FDL.setText("30");
+        itemcost[41]=itemcost[40]-30;
+
+        billnum.setText(Integer.toString(1325+ (int) (Math.random()*4238)));
+        pbill.setEnabled(true);
+
+        pbill.append("\tCustomer Billing System \n");
+
+        pbill.append("\nBill No." + billnum.getText() +
+                "\nCustomer Name:" + mname.getText() +
+                "       Mobile No." +num.getText() +
+            "\n==========================================================" +
+            "\n==========================================================");
+        if(jCheckBox1.isSelected())
+        {
+            pbill.append("\n" + jCheckBox1.getText() + "  Qty. " + I1.getText() + " Rs. " + itemcost[0] + "\n");
+        }
+        if(jCheckBox2.isSelected())
+        {
+            pbill.append("\n" + jCheckBox2.getText() + "  Qty. " + I2.getText() + " Rs. " + itemcost[1] + "\n");
+        }
+        if(jCheckBox3.isSelected())
+        {
+            pbill.append("\n" + jCheckBox3.getText() + "  Qty. " + I3.getText() + " Rs. " + itemcost[2] + "\n");
+        }
+        if(jCheckBox4.isSelected())
+        {
+            pbill.append("\n" + jCheckBox4.getText() + "  Qty. " + I4.getText() + " Rs. " + itemcost[3] + "\n");
+        }
+        if(jCheckBox5.isSelected())
+        {
+            pbill.append("\n" + jCheckBox5.getText() + "  Qty. " + I5.getText() + " Rs. " + itemcost[4] + "\n");
+        }
+        if(jCheckBox6.isSelected())
+        {
+            pbill.append("\n" + jCheckBox6.getText() + "  Qty. " + I6.getText() + " Rs. " + itemcost[5] + "\n");
+        }
+        if(jCheckBox7.isSelected())
+        {
+            pbill.append("\n" + jCheckBox7.getText() + "  Qty. " + I7.getText() + " Rs. " + itemcost[6] + "\n");
+        }
+        if(jCheckBox8.isSelected())
+        {
+            pbill.append("\n" + jCheckBox8.getText() + "  Qty. " + I8.getText() + " Rs. " + itemcost[7] + "\n");
+        }
+        if(jCheckBox9.isSelected())
+        {
+            pbill.append("\n" + jCheckBox9.getText() + "  Qty. " + I9.getText() + " Rs. " + itemcost[8] + "\n");
+        }
+        if(jCheckBox10.isSelected())
+        {
+            pbill.append("\n" + jCheckBox10.getText() + "  Qty. " + I10.getText() + " Rs. " + itemcost[9] + "\n");
+        }
+        if(jCheckBox11.isSelected())
+        {
+            pbill.append("\n" + jCheckBox11.getText() + "  Qty. " + I11.getText() + " Rs. " + itemcost[10] + "\n");
+        }
+        if(jCheckBox12.isSelected())
+        {
+            pbill.append("\n" + jCheckBox12.getText() + "  Qty. " + I12.getText() + " Rs. " + itemcost[11] + "\n");
+        }
+        if(jCheckBox13.isSelected())
+        {
+            pbill.append("\n" + jCheckBox13.getText() + "  Qty. " + I13.getText() + " Rs. " + itemcost[12] + "\n");
+        }
+        if(jCheckBox14.isSelected())
+        {
+            pbill.append("\n" + jCheckBox14.getText() + "  Qty. " + I14.getText() + " Rs. " + itemcost[13] + "\n");
+        }
+        if(jCheckBox15.isSelected())
+        {
+            pbill.append("\n" + jCheckBox15.getText() + "  Qty. " + I15.getText() + " Rs. " + itemcost[14] + "\n");
+        }
+        if(jCheckBox16.isSelected())
+        {
+            pbill.append("\n" + jCheckBox16.getText() + "  Qty. " + I16.getText() + " Rs. " + itemcost[15] + "\n");
+        }
+        if(jCheckBox17.isSelected())
+        {
+            pbill.append("\n" + jCheckBox17.getText() + "  Qty. " + I17.getText() + " Rs. " + itemcost[16] + "\n");
+        }
+        if(jCheckBox18.isSelected())
+        {
+            pbill.append("\n" + jCheckBox18.getText() + "  Qty. " + I18.getText() + " Rs. " + itemcost[17] + "\n");
+        }
+        if(jCheckBox19.isSelected())
+        {
+            pbill.append("\n" + jCheckBox19.getText() + "  Qty. " + I19.getText() + " Rs. " + itemcost[18] + "\n");
+        }
+        if(jCheckBox20.isSelected())
+        {
+            pbill.append("\n" + jCheckBox20.getText() + "  Qty. " + I20.getText() + " Rs. " + itemcost[19] + "\n");
+        }
+        if(jCheckBox21.isSelected())
+        {
+            pbill.append("\n" + jCheckBox21.getText() + "  Qty. " + I21.getText() + " Rs. " + itemcost[20] + "\n");
+        }
+        if(jCheckBox22.isSelected())
+        {
+            pbill.append("\n" + jCheckBox22.getText() + "  Qty. " + I22.getText() + " Rs. " + itemcost[21] + "\n");
+        }
+        if(jCheckBox23.isSelected())
+        {
+            pbill.append("\n" + jCheckBox23.getText() + "  Qty. " + I23.getText() + " Rs. " + itemcost[22] + "\n");
+        }
+        if(jCheckBox24.isSelected())
+        {
+            pbill.append("\n" + jCheckBox24.getText() + "  Qty. " + I24.getText() + " Rs. " + itemcost[23] + "\n");
+        }
+        if(jCheckBox25.isSelected())
+        {
+            pbill.append("\n" + jCheckBox25.getText() + "  Qty. " + I25.getText() + " Rs. " + itemcost[24] + "\n");
+        }
+        if(jCheckBox26.isSelected())
+        {
+            pbill.append("\n" + jCheckBox26.getText() + "  Qty. " + I26.getText() + " Rs. " + itemcost[25] + "\n");
+        }
+        if(jCheckBox27.isSelected())
+        {
+            pbill.append("\n" + jCheckBox27.getText() + "  Qty. " + I27.getText() + " Rs. " + itemcost[26] + "\n");
+        } if(jCheckBox28.isSelected())
+        {
+            pbill.append("\n" + jCheckBox28.getText() + "  Qty. " + I28.getText() + " Rs. " + itemcost[27] + "\n");
+        }
+        if(jCheckBox29.isSelected())
+        {
+            pbill.append("\n" + jCheckBox29.getText() + "  Qty. " + I29.getText() + " Rs. " + itemcost[28] + "\n");
+        }
+        if(jCheckBox30.isSelected())
+        {
+            pbill.append("\n" + jCheckBox30.getText() + "  Qty. " + I30.getText() + " Rs. " + itemcost[29] + "\n");
+        }
+        if(jCheckBox31.isSelected())
+        {
+            pbill.append("\n" + jCheckBox31.getText() + "  Qty. " + I31.getText() + " Rs. " + itemcost[30] + "\n");
+        }
+        if(jCheckBox32.isSelected())
+        {
+            pbill.append("\n" + jCheckBox32.getText() + "  Qty. " + I32.getText() + " Rs. " + itemcost[31] + "\n");
+        }
+        if(jCheckBox33.isSelected())
+        {
+            pbill.append("\n" + jCheckBox33.getText() + "  Qty. " + I33.getText() + " Rs. " + itemcost[32] + "\n");
+        }
+        if(jCheckBox34.isSelected())
+        {
+            pbill.append("\n" + jCheckBox34.getText() + "  Qty. " + I34.getText() + " Rs. " + itemcost[33] + "\n");
+        }
+        if(jCheckBox35.isSelected())
+        {
+            pbill.append("\n" + jCheckBox35.getText() + "  Qty. " + I35.getText() + " Rs. " + itemcost[34] + "\n");
+        }
+        if(jCheckBox36.isSelected())
+        {
+            pbill.append("\n" + jCheckBox36.getText() + "  Qty. " + I36.getText() + " Rs. " + itemcost[35] + "\n");
+        }
+        if(jCheckBox37.isSelected())
+        {
+            pbill.append("\n" + jCheckBox37.getText() + "  Qty. " + I37.getText() + " Rs. " + itemcost[36] + "\n");
+        }
+        pbill.append("\n Subtotal:" + itemcost[41] +"\n");
+        pbill.append("\n Delivery Charge: 30\n");
+        pbill.append("\n Tax:" + iTax +"\n");
+        pbill.append("\n Total:" + iTotal +"\n");
+
+    }//GEN-LAST:event_TOTALMouseClicked
+
+    private void TOTALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TOTALActionPerformed
+        // TODO add your handling code here:
+        if(jCheckBox1.isSelected())
+        {
+            itemcost[0]=Double.parseDouble(I1.getText()) * 70.00;
+        }
+
+        if(jCheckBox2.isSelected())
+        {
+            itemcost[1]=Double.parseDouble(I2.getText()) * 80.00;
+        }
+
+        if(jCheckBox3.isSelected())
+        {
+            itemcost[2]=Double.parseDouble(I3.getText()) * 80.00;
+        }
+
+        if(jCheckBox4.isSelected())
+        {
+            itemcost[3]=Double.parseDouble(I4.getText()) * 80.00;
+        }
+
+        if(jCheckBox5.isSelected())
+        {
+            itemcost[4]=Double.parseDouble(I5.getText()) * 80.00;
+        }
+
+        if(jCheckBox6.isSelected())
+        {
+            itemcost[5]=Double.parseDouble(I6.getText()) * 80.00;
+        }
+
+        if(jCheckBox7.isSelected())
+        {
+            itemcost[6]=Double.parseDouble(I7.getText()) * 80.00;
+        }
+
+        if(jCheckBox8.isSelected())
+        {
+            itemcost[7]=Double.parseDouble(I8.getText()) * 30.00;
+        }
+
+        if(jCheckBox9.isSelected())
+        {
+            itemcost[8]=Double.parseDouble(I9.getText()) * 40.00;
+        }
+
+        if(jCheckBox10.isSelected())
+        {
+            itemcost[9]=Double.parseDouble(I10.getText()) * 45.00;
+        }
+
+        if(jCheckBox11.isSelected())
+        {
+            itemcost[10]=Double.parseDouble(I11.getText()) * 45.00;
+        }
+
+        if(jCheckBox12.isSelected())
+        {
+            itemcost[11]=Double.parseDouble(I12.getText()) * 60.00;
+        }
+
+        if(jCheckBox13.isSelected())
+        {
+            itemcost[12]=Double.parseDouble(I13.getText()) * 80.00;
+        }
+
+        if(jCheckBox14.isSelected())
+        {
+            itemcost[13]=Double.parseDouble(I14.getText()) * 70.00;
+        }
+
+        if(jCheckBox15.isSelected())
+        {
+            itemcost[14]=Double.parseDouble(I15.getText()) * 50.00;
+        }
+
+        if(jCheckBox16.isSelected())
+        {
+            itemcost[15]=Double.parseDouble(I16.getText()) * 60.00;
+        }
+
+        if(jCheckBox17.isSelected())
+        {
+            itemcost[16]=Double.parseDouble(I17.getText()) * 40.00;
+        }
+
+        if(jCheckBox18.isSelected())
+        {
+            itemcost[17]=Double.parseDouble(I18.getText()) * 100.00;
+        }
+
+        if(jCheckBox19.isSelected())
+        {
+            itemcost[18]=Double.parseDouble(I19.getText()) * 500.00;
+        }
+
+        if(jCheckBox20.isSelected())
+        {
+            itemcost[19]=Double.parseDouble(I20.getText()) * 120.00;
+        }
+
+        if(jCheckBox21.isSelected())
+        {
+            itemcost[20]=Double.parseDouble(I21.getText()) * 100.00;
+        }
+
+        if(jCheckBox22.isSelected())
+        {
+            itemcost[21]=Double.parseDouble(I22.getText()) * 120.00;
+        }
+
+        if(jCheckBox23.isSelected())
+        {
+            itemcost[22]=Double.parseDouble(I23.getText()) * 140.00;
+        }
+
+        if(jCheckBox24.isSelected())
+        {
+            itemcost[23]=Double.parseDouble(I24.getText()) * 130.00;
+        }
+
+        if(jCheckBox25.isSelected())
+        {
+            itemcost[24]=Double.parseDouble(I25.getText()) * 70.00;
+        }
+
+        if(jCheckBox26.isSelected())
+        {
+            itemcost[25]=Double.parseDouble(I26.getText()) * 80.00;
+        }
+
+        if(jCheckBox27.isSelected())
+        {
+            itemcost[26]=Double.parseDouble(I27.getText()) * 50.00;
+        }
+
+        if(jCheckBox28.isSelected())
+        {
+            itemcost[27]=Double.parseDouble(I28.getText()) * 70.00;
+        }
+
+        if(jCheckBox29.isSelected())
+        {
+            itemcost[28]=Double.parseDouble(I29.getText()) * 70.00;
+        }
+
+        if(jCheckBox30.isSelected())
+        {
+            itemcost[29]=Double.parseDouble(I30.getText()) * 70.00;
+        }
+
+        if(jCheckBox31.isSelected())
+        {
+            itemcost[30]=Double.parseDouble(I31.getText()) * 30.00;
+        }
+
+        if(jCheckBox32.isSelected())
+        {
+            itemcost[31]=Double.parseDouble(I32.getText()) * 30.00;
+        }
+
+        if(jCheckBox33.isSelected())
+        {
+            itemcost[32]=Double.parseDouble(I33.getText()) * 30.00;
+        }
+
+        if(jCheckBox34.isSelected())
+        {
+            itemcost[33]=Double.parseDouble(I34.getText()) * 30.00;
+        }
+
+        if(jCheckBox35.isSelected())
+        {
+            itemcost[34]=Double.parseDouble(I35.getText()) * 30.00;
+        }
+
+        if(jCheckBox36.isSelected())
+        {
+            itemcost[35]=Double.parseDouble(I36.getText()) * 30.00;
+        }
+
+        if(jCheckBox37.isSelected())
+        {
+            itemcost[36]=Double.parseDouble(I37.getText()) * 20.00;
+        }
+
+    }//GEN-LAST:event_TOTALActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        I1.setText(null);
+        I2.setText(null);
+        I3.setText(null);
+        I4.setText(null);
+        I5.setText(null);
+        I6.setText(null);
+        I7.setText(null);
+        I8.setText(null);
+        I9.setText(null);
+        I10.setText(null);
+        I11.setText(null);
+        I12.setText(null);
+        I13.setText(null);
+        I14.setText(null);
+        I15.setText(null);
+        I16.setText(null);
+        I17.setText(null);
+        I18.setText(null);
+        I19.setText(null);
+        I20.setText(null);
+        I21.setText(null);
+        I22.setText(null);
+        I23.setText(null);
+        I24.setText(null);
+        I25.setText(null);
+        I26.setText(null);
+        I27.setText(null);
+        I28.setText(null);
+        I29.setText(null);
+        I30.setText(null);
+        I31.setText(null);
+        I32.setText(null);
+        I33.setText(null);
+        I34.setText(null);
+        I35.setText(null);
+        I36.setText(null);
+        I37.setText(null);
+
+        I1.setEnabled(false);
+        I2.setEnabled(false);
+        I3.setEnabled(false);
+        I4.setEnabled(false);
+        I5.setEnabled(false);
+        I6.setEnabled(false);
+        I7.setEnabled(false);
+        I8.setEnabled(false);
+        I9.setEnabled(false);
+        I10.setEnabled(false);
+        I11.setEnabled(false);
+        I12.setEnabled(false);
+        I13.setEnabled(false);
+        I14.setEnabled(false);
+        I15.setEnabled(false);
+        I16.setEnabled(false);
+        I17.setEnabled(false);
+        I18.setEnabled(false);
+        I19.setEnabled(false);
+        I20.setEnabled(false);
+        I21.setEnabled(false);
+        I22.setEnabled(false);
+        I23.setEnabled(false);
+        I24.setEnabled(false);
+        I25.setEnabled(false);
+        I26.setEnabled(false);
+        I27.setEnabled(false);
+        I28.setEnabled(false);
+        I29.setEnabled(false);
+        I30.setEnabled(false);
+        I31.setEnabled(false);
+        I32.setEnabled(false);
+        I33.setEnabled(false);
+        I34.setEnabled(false);
+        I35.setEnabled(false);
+        I36.setEnabled(false);
+        I37.setEnabled(false);
+
+        jCheckBox1.setSelected(false);
+        jCheckBox2.setSelected(false);
+        jCheckBox3.setSelected(false);
+        jCheckBox4.setSelected(false);
+        jCheckBox5.setSelected(false);
+        jCheckBox6.setSelected(false);
+        jCheckBox7.setSelected(false);
+        jCheckBox8.setSelected(false);
+        jCheckBox9.setSelected(false);
+        jCheckBox10.setSelected(false);
+        jCheckBox11.setSelected(false);
+        jCheckBox12.setSelected(false);
+        jCheckBox13.setSelected(false);
+        jCheckBox14.setSelected(false);
+        jCheckBox15.setSelected(false);
+        jCheckBox16.setSelected(false);
+        jCheckBox17.setSelected(false);
+        jCheckBox18.setSelected(false);
+        jCheckBox19.setSelected(false);
+        jCheckBox20.setSelected(false);
+        jCheckBox21.setSelected(false);
+        jCheckBox22.setSelected(false);
+        jCheckBox23.setSelected(false);
+        jCheckBox24.setSelected(false);
+        jCheckBox25.setSelected(false);
+        jCheckBox26.setSelected(false);
+        jCheckBox27.setSelected(false);
+        jCheckBox28.setSelected(false);
+        jCheckBox29.setSelected(false);
+        jCheckBox30.setSelected(false);
+        jCheckBox31.setSelected(false);
+        jCheckBox32.setSelected(false);
+        jCheckBox33.setSelected(false);
+        jCheckBox34.setSelected(false);
+        jCheckBox35.setSelected(false);
+        jCheckBox36.setSelected(false);
+        jCheckBox36.setSelected(false);
+        jCheckBox37.setSelected(false);
+
+        mname.setText(null);
+
+        num.setText(null);
+        
+
+        billnum.setText(null);
+        tax.setText(null);
+        ftotal.setText(null);
+        
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void taxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_taxMouseClicked
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_taxMouseClicked
+
+    private void taxMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_taxMousePressed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_taxMousePressed
+
+    private void taxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_taxActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_taxActionPerformed
+
+    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+        // TODO add your handling code here:
+
+        try
+        {
+            pbill.print();
+        }
+        catch(java.awt.print.PrinterException e)
+        {
+            System.err.format("No Printer Found", e.getMessage());
+        }
+    }//GEN-LAST:event_button1ActionPerformed
+
+    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+  String m,n,f;
+          m=mname.getText();
+          n=num.getText();
+          f=ftotal.getText();
+   
+        String INSERT_SQL="INSERT INTO trial "
+      + "(mname,num,ftotal) VALUES (?,?,?)";
+    String jdbcUrl = "jdbc:mysql://localhost:3306/restaurant";
+    String username = "root";
+    String password = "2511";
+
+    Connection conn = null;
     
+    PreparedStatement stmt = null;
+ 
+    try {
+      //Open connection
+      conn = DriverManager.getConnection(jdbcUrl, username, password);
+      
+      //Create statement
+       stmt = conn.prepareStatement(INSERT_SQL);
+
+      // Insert first record
+      stmt.setString(1, m);
+      stmt.setString(2,n);
+      stmt.setString(3,f);
+      
+      stmt.executeUpdate();
+      System.out.println("Records inserted");
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+    } finally {
+      try {
+        // Close connection
+        if (stmt != null) {
+          stmt.close();
+        }
+        if (conn != null) {
+          conn.close();
+        }
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+    }
+    exit e=new exit();
+    e.setVisible(true);
+    dispose();
+  
+  
+  
+        
+    }//GEN-LAST:event_exitActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+         
+        Object selectedItem = jComboBox1.getSelectedItem();
+         if ("Card".equals(jComboBox1.getSelectedItem().toString())) {
+                Payment pframe=new Payment();
+                        
+                        pframe.setVisible(true);
+                        dispose();}
+       
+         
+            // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void I1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_I1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_I1ActionPerformed
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        // TODO add your handling code here:
+I1.setText(null);
+        I2.setText(null);
+        I3.setText(null);
+        I4.setText(null);
+        I5.setText(null);
+        I6.setText(null);
+        I7.setText(null);
+        I8.setText(null);
+        I9.setText(null);
+        I10.setText(null);
+        I11.setText(null);
+        I12.setText(null);
+        I13.setText(null);
+        I14.setText(null);
+        I15.setText(null);
+        I16.setText(null);
+        I17.setText(null);
+        I18.setText(null);
+        I19.setText(null);
+        I20.setText(null);
+        I21.setText(null);
+        I22.setText(null);
+        I23.setText(null);
+        I24.setText(null);
+        I25.setText(null);
+        I26.setText(null);
+        I27.setText(null);
+        I28.setText(null);
+        I29.setText(null);
+        I30.setText(null);
+        I31.setText(null);
+        I32.setText(null);
+        I33.setText(null);
+        I34.setText(null);
+        I35.setText(null);
+        I36.setText(null);
+        I37.setText(null);
+
+        I1.setEnabled(false);
+        I2.setEnabled(false);
+        I3.setEnabled(false);
+        I4.setEnabled(false);
+        I5.setEnabled(false);
+        I6.setEnabled(false);
+        I7.setEnabled(false);
+        I8.setEnabled(false);
+        I9.setEnabled(false);
+        I10.setEnabled(false);
+        I11.setEnabled(false);
+        I12.setEnabled(false);
+        I13.setEnabled(false);
+        I14.setEnabled(false);
+        I15.setEnabled(false);
+        I16.setEnabled(false);
+        I17.setEnabled(false);
+        I18.setEnabled(false);
+        I19.setEnabled(false);
+        I20.setEnabled(false);
+        I21.setEnabled(false);
+        I22.setEnabled(false);
+        I23.setEnabled(false);
+        I24.setEnabled(false);
+        I25.setEnabled(false);
+        I26.setEnabled(false);
+        I27.setEnabled(false);
+        I28.setEnabled(false);
+        I29.setEnabled(false);
+        I30.setEnabled(false);
+        I31.setEnabled(false);
+        I32.setEnabled(false);
+        I33.setEnabled(false);
+        I34.setEnabled(false);
+        I35.setEnabled(false);
+        I36.setEnabled(false);
+        I37.setEnabled(false);
+
+        jCheckBox1.setSelected(false);
+        jCheckBox2.setSelected(false);
+        jCheckBox3.setSelected(false);
+        jCheckBox4.setSelected(false);
+        jCheckBox5.setSelected(false);
+        jCheckBox6.setSelected(false);
+        jCheckBox7.setSelected(false);
+        jCheckBox8.setSelected(false);
+        jCheckBox9.setSelected(false);
+        jCheckBox10.setSelected(false);
+        jCheckBox11.setSelected(false);
+        jCheckBox12.setSelected(false);
+        jCheckBox13.setSelected(false);
+        jCheckBox14.setSelected(false);
+        jCheckBox15.setSelected(false);
+        jCheckBox16.setSelected(false);
+        jCheckBox17.setSelected(false);
+        jCheckBox18.setSelected(false);
+        jCheckBox19.setSelected(false);
+        jCheckBox20.setSelected(false);
+        jCheckBox21.setSelected(false);
+        jCheckBox22.setSelected(false);
+        jCheckBox23.setSelected(false);
+        jCheckBox24.setSelected(false);
+        jCheckBox25.setSelected(false);
+        jCheckBox26.setSelected(false);
+        jCheckBox27.setSelected(false);
+        jCheckBox28.setSelected(false);
+        jCheckBox29.setSelected(false);
+        jCheckBox30.setSelected(false);
+        jCheckBox31.setSelected(false);
+        jCheckBox32.setSelected(false);
+        jCheckBox33.setSelected(false);
+        jCheckBox34.setSelected(false);
+        jCheckBox35.setSelected(false);
+        jCheckBox36.setSelected(false);
+        jCheckBox36.setSelected(false);
+        jCheckBox37.setSelected(false);
+    }//GEN-LAST:event_formWindowActivated
+
     /**
      * @param args the command line arguments
      */
@@ -2538,25 +2438,27 @@ I1.setText(null);
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(trial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(trial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(trial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(trial.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new menu().setVisible(true);
+                new trial().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Label DL;
+    private javax.swing.JTextField FDL;
     public javax.swing.JTextField I1;
     public javax.swing.JTextField I10;
     public javax.swing.JTextField I11;
@@ -2597,7 +2499,6 @@ I1.setText(null);
     private javax.swing.JButton TOTAL;
     public javax.swing.JTextField billnum;
     private java.awt.Button button1;
-    private javax.swing.ButtonGroup buttonGroup1;
     public java.awt.Button exit;
     public javax.swing.JTextField ftotal;
     private javax.swing.JButton jButton2;
