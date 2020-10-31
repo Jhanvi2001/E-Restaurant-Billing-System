@@ -1682,9 +1682,9 @@ public class dine_in extends javax.swing.JFrame {
 
         String INSERT_SQL="INSERT INTO trial "
         + "(mname,num,ftotal) VALUES (?,?,?)";
-        String jdbcUrl = "jdbc:mysql://localhost:3306/restaurant";
+        String jdbcUrl = "jdbc:mysql://localhost:3306/databasename";
         String username = "root";
-        String password = "2511";
+        String password = "password";
 
         Connection conn = null;
 
