@@ -198,7 +198,7 @@ public class register extends javax.swing.JFrame {
                         try 
        {
            Class.forName("java.sql.DriverManager");
-           Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurant","root","2511");
+           Connection con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/databasename","root","password");
            Statement stmt=(Statement)con.createStatement();
            String q="insert into register values('"+name+"','"+m_number+"','"+password+"','"+c_password+"');";
            stmt.executeUpdate(q);
