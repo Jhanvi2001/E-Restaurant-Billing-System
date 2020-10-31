@@ -93,10 +93,10 @@ String num,total;
     {
       // create the mysql database connection
       String myDriver = "org.gjt.mm.mysql.Driver";
-      String myUrl = "jdbc:mysql://localhost/restaurant";
+      String myUrl = "jdbc:mysql://localhost/database_name";
       Class.forName(myDriver);
     
-    try (Connection conn = DriverManager.getConnection(myUrl, "root", "2511")) {
+    try (Connection conn = DriverManager.getConnection(myUrl, "root", "rootpassword")) {
         // create the mysql delete statement.
         // i'm deleting the row where the id is "3", which corresponds to my
         // "Barney Rubble" record.
