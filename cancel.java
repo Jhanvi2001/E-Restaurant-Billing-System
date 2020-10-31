@@ -108,6 +108,8 @@ String num,total;
         // execute the preparedstatement
         preparedStmt.execute();
         JOptionPane.showMessageDialog(null,"payment canceled");
+ 
+                this.dispose();
     }
     
     }

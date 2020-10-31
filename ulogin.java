@@ -85,6 +85,7 @@ String name,password;
        if(name.equals("admin") & password.equals("ADMIN") | name.equals("table1") & password.equals("table1") |name.equals("table2") & password.equals("table2") | name.equals("table3") & password.equals("table3")  | name.equals("table4") & password.equals("table4") | name.equals("table5") & password.equals("table5") )
        {
            menu mframe=new menu();
+            menu.tableno.setText(name);
            mframe.setVisible(true);
            dispose(); 
        }
