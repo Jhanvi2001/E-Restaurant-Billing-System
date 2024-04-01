@@ -58,8 +58,4 @@ Step 6:Link files(register,login,forgot,new_password,menu) with database<br>
                   -In order to make program linked errorlessly ,it should be used.
 
 # Demo
-
-<video width="640" height="360" controls>
-  <source src="https://drive.google.com/file/d/1eY3Ci05vwjHDjoWCQ-8yeB9Ov2oWadLc/view?usp=sharing" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/HJFAUsQ-Wu8/0.jpg)](https://www.youtube.com/watch?v=HJFAUsQ-Wu8)
