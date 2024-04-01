@@ -58,4 +58,4 @@ Step 6:Link files(register,login,forgot,new_password,menu) with database<br>
                   -In order to make program linked errorlessly ,it should be used.
 
 # Demo
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/HJFAUsQ-Wu8/0.jpg)](https://www.youtube.com/watch?v=HJFAUsQ-Wu8)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/HJFAUsQ-Wu8/maxresdefault.jpg)](https://www.youtube.com/watch?v=HJFAUsQ-Wu8)
